@@ -1,0 +1,42 @@
+:root {
+  --main-orange-color: rgb(232, 172, 42);
+  --secondary-orange-color: rgb(199, 149, 40);
+}
+.navbar {
+  box-shadow: 2px 2px 2px #3f3e3e;
+  border-radius: 3px;
+  opacity: 0.95;
+}
+.navbar-light .navbar-brand,
+.nav-link {
+  color: snow !important;
+}
+.bg-dark {
+  background-color: var(--main-orange-color) !important;
+}
+#home-section,
+#about-the-author {
+  background-color: #eee;
+}
+#about-the-book {
+  background-color: rgba(238, 238, 238, 0.824);
+}
+#authorPic {
+  border-radius: 50%;
+}
+.fab {
+  color: var(--main-orange-color);
+}
+.btn-outline-primary {
+  color: var(--main-orange-color);
+  border-color: var(--main-orange-color);
+}
+.btn-outline-primary:hover {
+  background-color: var(--main-orange-color);
+  border-color: var(--main-orange-color);
+}
+
+.btn-outline-primary:active {
+  background-color: var(--secondary-orange-color) !important;
+  border-color: var(--secondary-orange-color) !important;
+}

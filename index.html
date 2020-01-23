@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home</title>
+  </head>
+  <body data-spy="scroll" data-target="#main-nav" id="home">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">NBT</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutBook" class="nav-link">About The Book</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutAuthor" class="nav-link">About The Author</a>
+            </li>
+            <li class="nav-item">
+              <a href="buyBook" class="nav-link">Buy Book</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HOME SECTION -->
+    <section id="home-section" class="mt-5 p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 mt-3">
+            <img src="img/nbtbook.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 d-none d-sm-block mt-3 align-self-center">
+            <h1>Want to make the <strong>Next Big Thing</strong>?</h1>
+            <p>Well look no further. This book, this piece of artwork, is everything you will need to enjoy the satisfaction (and profits of) creating the Next Big Thing.</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eaque blanditiis a, aliquam incidunt officia sit cupiditate odio exercitationem consectetur alias commodi ratione numquam
+              maiores dignissimos et ea quibusdam? Officia, accusantium nihil iste quasi eos error aliquam voluptas beatae sapiente ipsam dolores culpa dicta nemo molestiae fugiat fuga debitis
+              laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT THE BOOK -->
+    <section class="about-the-book p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 align-self-center ">
+            <h1>What Can This Book Do For You?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio voluptates ducimus? Perferendis molestias error iste facilis. Dolores quod, soluta dolor itaque veniam ipsum. Placeat
+              odit facere architecto quisquam explicabo nobis odio sequi ratione, a, quis perspiciatis incidunt saepe dolor!
+            </p>
+          </div>
+          <div class="col-sm-8 d-none d-sm-block align-self-center">
+            <h3 class="text-center"><em>Let it flow, let it flow, let it flow...</em></h3>
+            <img src="/img/creativity-flow.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT THE AUTHOR -->
+    <section id="about-the-author" class="p-3">
+      <div class="container">
+        <div class="row ">
+          <div class="col-sm-6 align-self-center">
+            <h1>About The Author</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, accusantium. Reprehenderit unde consequatur eveniet modi similique! Dolores, laboriosam consequuntur corrupti dolor
+              aut cum itaque nostrum laudantium modi sed tempore possimus quos consectetur similique dolore sit ratione repellat. Deserunt magnam voluptatum provident minima omnis pariatur nobis
+              tempora porro quo minus? Animi.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img src="/img/author.png" alt="" class="img-fluid" id="authorPic" />
+          </div>
+          <div class="col-sm-2 flex-column">
+            <div class="p-4 align-self-top">
+              <a href="https://www.facebook.com"> <i class="fab fa-facebook fa-3x"></i></a>
+            </div>
+            <div class="p-4 align-self-center">
+              <a href="https://www.twitter.com"> <i class="fab fa-twitter fa-3x"></i></a>
+            </div>
+            <div class="p-4 align-self-end">
+              <a href="https://www.instagram.com"> <i class="fab fa-instagram fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BUY COPY OF BOOK -->
+    <section id="buybook" class="p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h1>Want to purchase the book?</h1>
+            <p>Fill in the form to request a copy of the book.</p>
+          </div>
+          <div class="col-sm-8 align-self-center">
+            <form>
+              <input type="text" class="form-control mb-2" placeholder="Name" />
+              <input type="email" class="form-control mb-2" placeholder="Email" />
+              <input type="email" class="form-control mb-2" placeholder="Confirm email" />
+              <button class="btn btn-outline-primary">Request Form</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
