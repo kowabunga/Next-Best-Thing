@@ -5,8 +5,8 @@
 }
 
 :root {
-  --main-orange-color: rgb(232, 172, 42);
-  --secondary-orange-color: rgb(199, 149, 40);
+  --main-blue-color: rgb(29, 154, 248);
+  --secondary-blue-color: rgb(11, 107, 235);
   --icon-white-color: rgb(238, 236, 236);
   --icon-hover-color: rgb(255, 174, 0);
 }
@@ -21,7 +21,7 @@
 }
 .bg-dark,
 .bg-primary {
-  background-color: var(--main-orange-color) !important;
+  background-color: var(--main-blue-color) !important;
 }
 #home,
 #whyBook {
@@ -43,15 +43,15 @@
 }
 .btn-outline-primary {
   background-color: #fff;
-  color: var(--main-orange-color);
-  border-color: var(--main-orange-color);
+  color: var(--main-blue-color);
+  border-color: var(--main-blue-color);
 }
 .btn-outline-primary:hover {
-  background-color: var(--main-orange-color);
-  border-color: var(--main-orange-color);
+  background-color: var(--main-blue-color);
+  border-color: var(--main-blue-color);
 }
 
 .btn-outline-primary:active {
-  background-color: var(--secondary-orange-color) !important;
-  border-color: var(--secondary-orange-color) !important;
+  background-color: var(--secondary-blue-color) !important;
+  border-color: var(--secondary-blue-color) !important;
 }
