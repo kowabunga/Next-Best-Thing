@@ -1,33 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --main-orange-color: rgb(232, 172, 42);
   --secondary-orange-color: rgb(199, 149, 40);
+  --icon-white-color: rgb(238, 236, 236);
+  --icon-hover-color: rgb(255, 174, 0);
 }
 .navbar {
   box-shadow: 2px 2px 2px #3f3e3e;
   border-radius: 3px;
-  opacity: 0.95;
+  opacity: 0.98;
 }
 .navbar-light .navbar-brand,
 .nav-link {
   color: snow !important;
 }
-.bg-dark {
+.bg-dark,
+.bg-primary {
   background-color: var(--main-orange-color) !important;
 }
-#home-section,
-#about-the-author {
-  background-color: #eee;
+#home,
+#whyBook {
+  background-color: white;
 }
-#about-the-book {
-  background-color: rgba(238, 238, 238, 0.824);
+#aboutBook,
+#aboutAuthor {
+  background-color: rgba(182, 180, 180, 0.79);
 }
 #authorPic {
   border-radius: 50%;
 }
+
 .fab {
-  color: var(--main-orange-color);
+  color: var(--icon-white-color);
+}
+.fab:hover {
+  color: var(--icon-hover-color);
 }
 .btn-outline-primary {
+  background-color: #fff;
   color: var(--main-orange-color);
   border-color: var(--main-orange-color);
 }

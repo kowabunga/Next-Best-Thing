@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Home</title>
   </head>
-  <body data-spy="scroll" data-target="#main-nav" id="home">
+  <body>
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark fixed-top py-3" id="main-nav">
       <div class="container">
         <a href="index.html" class="navbar-brand">NBT</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -39,14 +39,14 @@
               <a href="#aboutAuthor" class="nav-link">About The Author</a>
             </li>
             <li class="nav-item">
-              <a href="buyBook" class="nav-link">Buy Book</a>
+              <a href="#buyBook" class="nav-link">Buy Book</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- HOME SECTION -->
-    <section id="home-section" class="mt-5 p-3">
+    <section id="home" class="mt-5 p-3">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 mt-3">
@@ -66,7 +66,7 @@
     </section>
 
     <!-- ABOUT THE BOOK -->
-    <section class="about-the-book p-3">
+    <section id="aboutBook" class="p-3">
       <div class="container">
         <div class="row">
           <div class="col-sm-4 align-self-center ">
@@ -83,11 +83,23 @@
         </div>
       </div>
     </section>
+    <!-- WHY THE BOOK? -->
+    <section id="whyBook" class="p-3">
+      <div class="col-md-8 offset-md-2 d-none d-sm-block">
+        <h1>What makes this guide unique?</h1>
+        <p>By combining the never before talked about experiences of multiple high-profile entrepreneurs, this book brings insight into what made them so successful.</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam officia aspernatur iste nemo. Harum voluptatum doloribus, id reiciendis ea voluptates commodi similique rem exercitationem
+          obcaecati quam voluptatibus minima deleniti ipsa molestiae accusamus omnis recusandae ipsam quaerat aspernatur, impedit animi aperiam autem! Ut excepturi aperiam quasi soluta, officiis
+          dolorum fugiat voluptate.
+        </p>
+      </div>
+    </section>
     <!-- ABOUT THE AUTHOR -->
-    <section id="about-the-author" class="p-3">
+    <section id="aboutAuthor" class="p-3">
       <div class="container">
         <div class="row ">
-          <div class="col-sm-6 align-self-center">
+          <div class="col-sm-6 order-2 align-self-center">
             <h1>About The Author</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, accusantium. Reprehenderit unde consequatur eveniet modi similique! Dolores, laboriosam consequuntur corrupti dolor
@@ -95,7 +107,7 @@
               tempora porro quo minus? Animi.
             </p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 order-1" id="authorBioPic">
             <img src="/img/author.png" alt="" class="img-fluid" id="authorPic" />
           </div>
           <div class="col-sm-2 flex-column">
@@ -113,7 +125,7 @@
       </div>
     </section>
     <!-- BUY COPY OF BOOK -->
-    <section id="buybook" class="p-3">
+    <section id="buyBook" class="p-3">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
@@ -131,11 +143,21 @@
         </div>
       </div>
     </section>
+    <!-- FOOTER -->
+    <footer id="main-footer" class="py-2 bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 m-auto">
+            <p class="lead">Copyright &copy; <span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--  -->
     <!--  -->
     <!--  -->
     <!--  -->
-    <!--  -->
+
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -147,5 +169,9 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $('#year').text(new Date().getFullYear());
+      $('body').scrollspy({ target: '#main-nav' });
+    </script>
   </body>
 </html>
