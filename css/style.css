@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --main-blue-color: rgb(29, 154, 248);
   --secondary-blue-color: rgb(11, 107, 235);
@@ -26,10 +25,13 @@
 #home,
 #whyBook {
   background: url('/img/inyourgrasp.png');
-  color: white;
   background-position: 0;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  color: white;
+  /* text shadow for visibility over picture */
+  text-shadow: 1px 1px 2px black;
 }
 #aboutBook,
 #aboutAuthor {
@@ -38,13 +40,17 @@
 #authorPic {
   border-radius: 50%;
 }
-
+#buyBook {
+  background-color: #fff;
+}
+/* icons */
 .fab {
   color: var(--icon-white-color);
 }
 .fab:hover {
   color: var(--icon-hover-color);
 }
+/* buttons */
 .btn-outline-primary {
   background-color: #fff;
   color: var(--main-blue-color);
@@ -54,7 +60,6 @@
   background-color: var(--main-blue-color);
   border-color: var(--main-blue-color);
 }
-
 .btn-outline-primary:active {
   background-color: var(--secondary-blue-color) !important;
   border-color: var(--secondary-blue-color) !important;
