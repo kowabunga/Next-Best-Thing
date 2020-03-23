@@ -23,7 +23,7 @@
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-sm navbar-light bg-dark fixed-top py-3">
       <div class="container">
-        <a href="index.html" class="navbar-brand">NBT</a>
+        <a href="#home" class="navbar-brand">NBT</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,6 +36,9 @@
               <a href="#aboutBook" class="nav-link">About The Book</a>
             </li>
             <li class="nav-item">
+              <a href="#whyBook" class="nav-link">Why This Book?</a>
+            </li>
+            <li class="nav-item">
               <a href="#aboutAuthor" class="nav-link">About The Author</a>
             </li>
             <li class="nav-item">
@@ -46,7 +49,7 @@
       </div>
     </nav>
     <!-- HOME SECTION -->
-    <section id="home" class="mt-5 p-3">
+    <section id="splash" class="mt-5 p-3">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 mt-3">
@@ -55,11 +58,6 @@
           <div class="col-sm-4 d-none d-sm-block mt-3 align-self-center">
             <h1>Want to make the <strong>Next Big Thing</strong>?</h1>
             <p>Well look no further. This book, this piece of artwork, is everything you will need to enjoy the satisfaction (and profits of) creating the Next Big Thing.</p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eaque blanditiis a, aliquam incidunt officia sit cupiditate odio exercitationem consectetur alias commodi ratione numquam
-              maiores dignissimos et ea quibusdam? Officia, accusantium nihil iste quasi eos error aliquam voluptas beatae sapiente ipsam dolores culpa dicta nemo molestiae fugiat fuga debitis
-              laborum.
-            </p>
           </div>
         </div>
       </div>
@@ -172,5 +170,18 @@
   ></script>
   <script>
     $('#year').text(new Date().getFullYear());
+
+    // jquery smooth scroll
+    $('a').on('click', function(e) {
+      e.preventDefault();
+      let target = $(this).attr('href');
+      console.log(target);
+      $('html,body').animate(
+        {
+          scrollTop: $(target).offset().top - 72
+        },
+        300
+      );
+    });
   </script>
 </html>
